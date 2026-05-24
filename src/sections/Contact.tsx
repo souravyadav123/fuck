@@ -338,7 +338,7 @@ export default function Contact() {
               <div className="mt-5 rounded-xl border border-lime-accent/20 bg-lime-accent/[0.06] p-4">
                 <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-lime-accent">Current Focus</p>
                 <p className="mt-3 font-serif text-[18px] leading-snug text-kimono-white">
-                  Polished React interfaces with AI features, clean UX, and controlled motion.
+                  
                 </p>
                 <div className="mt-3 flex flex-wrap gap-2">
                   {['React', 'Tailwind', 'GSAP', 'AI UX'].map((item) => (
