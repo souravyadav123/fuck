@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Github, Globe, Instagram, Linkedin, Send } from 'lucide-react';
+import { Github, Globe, Linkedin } from 'lucide-react';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -10,6 +10,19 @@ const navLinks = [
   { label: 'About', id: 'about' },
   { label: 'Work', id: 'work' },
   { label: 'Contact', id: 'contacts' },
+];
+
+const socialLinks = [
+  {
+    label: 'GitHub',
+    href: 'https://github.com/Souravsudow',
+    icon: Github,
+  },
+  {
+    label: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/sourav-kumar08/',
+    icon: Linkedin,
+  },
 ];
 
 export default function Footer() {
@@ -95,10 +108,13 @@ export default function Footer() {
 
         {/* Social Icons */}
         <div className="flex items-center gap-4">
-          {[Github, Linkedin, Instagram, Send].map((Icon, i) => (
+          {socialLinks.map(({ label, href, icon: Icon }) => (
             <a
-              key={i}
-              href="#"
+              key={label}
+              href={href}
+              target="_blank"
+              rel="noreferrer"
+              aria-label={label}
               className="text-kimono-white/50 hover:text-kimono-white transition-colors duration-300"
               data-cursor="hover"
             >

@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Github, Globe, Instagram, Linkedin, Send } from 'lucide-react';
+import { Globe } from 'lucide-react';
 
 gsap.registerPlugin(ScrollTrigger);
 
